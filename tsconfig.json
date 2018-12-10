@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "target": "es6",
+        "outDir": "out",
+        "lib": [
+            "es6"
+        ],
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitUseStrict": false,
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "traceResolution": false,
+        "listFiles": false,
+        "stripInternal": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": false,
+        "pretty": false,
+        "noEmitOnError": true,
+        "rootDir": "src",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "exclude": [
+        "node_modules",
+        ".vscode-test",
+        "out"
+    ]
+}
