@@ -10,14 +10,35 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:vertical-line.sayHello"
+        "*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "vertical-line.sayHello",
-                "title": "Hello Vertical Line"
+                "command": "vertical-line.show",
+                "title": "Show Vertical Line"
+            },
+            {
+                "command": "vertical-line.hide",
+                "title": "Hide Vertical Line"
+            }
+        ],
+        "configuration": [
+            {
+                "title": "Vertical Line",
+                "properties": {
+                    "vertical-line.enabled": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Enabled Vertical Line"
+                    },
+                    "vertical-line.color": {
+                        "type": "string",
+                        "default": "#888888",
+                        "description": "Vertical Line Color"
+                    }
+                }
             }
         ]
     },
